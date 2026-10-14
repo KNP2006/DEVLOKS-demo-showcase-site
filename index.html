@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DEVLOK — Digital products for ambitious businesses</title>
+<meta name="description" content="DEVLOK designs and builds business software, web applications and digital solutions for growing European SMEs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Apply saved theme before first paint to avoid a flash */
+try{var t=localStorage.getItem("devlok-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}
+</script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#/"><i></i>DEVLOK</a>
+<nav id="nav"><a href="#/" data-p="home">Home</a><a href="#/solutions" data-p="solutions">Solutions</a><a href="#/work" data-p="work">Work</a><a href="#/case/werkflow" data-p="case">Case Studies</a><a href="#/about" data-p="about">About</a><a href="#/contact" data-p="contact">Contact</a></nav>
+<div class="row" style="align-items:center;gap:10px">
+<button class="theme" id="themeBtn" type="button" aria-label="Switch to dark mode" title="Toggle light / dark"><span id="themeIc">☾</span></button>
+<a class="btn p sm hide-m" href="#/contact">Request a Demo</a>
+</div>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="page" id="home">
+<div class="hero"><div class="wrap">
+<div class="eyebrow">Realms of Creators</div>
+<h1>Digital products for <em>ambitious</em> businesses.</h1>
+<p class="lead">DEVLOK designs and builds business software, web applications and digital solutions for growing European SMEs.</p>
+<div class="row"><a class="btn p" href="#/work">Explore Our Work</a><a class="btn" href="#/contact">Request a Demo</a></div>
+<div class="grid g3" style="margin-top:56px" id="heroMocks"></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="eyebrow">What we build</div><h2>Software shaped around your workflow.</h2>
+<div class="grid g3" style="margin-top:28px" id="whatWeBuild"></div>
+</div></section>
+
+<section style="background:var(--soft)"><div class="wrap">
+<div class="eyebrow">Featured work</div><h2>Three concept products. One standard.</h2>
+<p class="mute" style="max-width:600px">Portfolio concepts built to show how we think about real business problems.</p>
+<div class="grid g3" style="margin-top:28px" id="featured"></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">How we think</div><h2>A simple, honest process.</h2>
+<div class="grid steps" style="margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+<div class="step"><b>01</b><h3>Understand</h3><p class="mute">Understand the business problem and existing workflow.</p></div>
+<div class="step"><b>02</b><h3>Design</h3><p class="mute">Design the user experience and technical solution.</p></div>
+<div class="step"><b>03</b><h3>Build</h3><p class="mute">Develop the application using modern technologies.</p></div>
+<div class="step"><b>04</b><h3>Improve</h3><p class="mute">Test, refine and prepare the product for real-world use.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="cta">
+<h2>Have a business problem worth solving?</h2>
+<p>Tell us what you are trying to improve. We can explore the right digital solution together.</p>
+<a class="btn p" href="#/contact">Discuss a Project</a></div></div></section>
+</div>
+
+<!-- SOLUTIONS -->
+<div class="page" id="solutions"><section><div class="wrap">
+<div class="eyebrow">Solutions</div><h1 class="ph">What DEVLOK can build.</h1>
+<p class="lead">Six areas where we turn business problems into professional software.</p>
+<div class="grid g2" id="solGrid"></div>
+</div></section></div>
+
+<!-- WORK -->
+<div class="page" id="work"><section><div class="wrap">
+<div class="eyebrow">Work</div><h1 class="ph">Selected projects.</h1>
+<p class="lead">All projects are concept products from the DEVLOK EU Showcase, not past client work.</p>
+<div id="workList" style="display:grid;gap:28px"></div>
+</div></section></div>
+
+<!-- CASE STUDY -->
+<div class="page" id="case"><section><div class="wrap" id="caseBody"></div></section></div>
+
+<!-- ABOUT -->
+<div class="page" id="about"><section><div class="wrap" style="max-width:820px">
+<div class="eyebrow">About</div><h1 class="ph">An India-based studio, building for Europe.</h1>
+<p class="lead">DEVLOK is a software development studio focused on building digital products and business solutions for European businesses.</p>
+<div class="grid g2">
+<div class="card"><h3>Who we are</h3><p>A small, independent studio operating from India. We don't have a European office or a long client list, and we won't pretend otherwise. What we have is working products you can see.</p></div>
+<div class="card"><h3>Who we work with</h3><p>Growing SMEs, founders and decision-makers in Germany, the Netherlands and Sweden who need software that fits how they actually work.</p></div>
+<div class="card"><h3>Philosophy</h3><p>Understand the problem first, then design, build and refine. Clear scope, clean interfaces, honest communication.</p></div>
+<div class="card"><h3>Technology</h3><p>Modern, maintainable web technologies: React, TypeScript, and the backend and database that fit the job.</p></div>
+</div>
+<div class="card" style="margin-top:20px"><h3>Long-term vision</h3><p>To grow from showcase products into a trusted partner for European businesses, with a professional presence, more delivered projects and more languages.</p></div>
+</div></section></div>
+
+<!-- CONTACT -->
+<div class="page" id="contact"><section><div class="wrap" style="max-width:720px">
+<div class="eyebrow">Contact</div><h1 class="ph">Start a conversation.</h1>
+<p class="lead">Request a live demo or tell us about your project. We'll reply personally.</p>
+<form id="cf" class="card">
+<div class="two"><label>Name<input name="name" required autocomplete="name"></label><label>Company<input name="company" autocomplete="organization"></label></div>
+<div class="two"><label>Business email<input type="email" name="email" required autocomplete="email"></label>
+<label>Country<select name="country"><option>Germany</option><option>Netherlands</option><option>Sweden</option><option>Other</option></select></label></div>
+<label>Project type<select name="type"><option>Business Software</option><option>Web Application</option><option>CRM</option><option>E-commerce</option><option>Automation</option><option>AI Solution</option><option>Other</option></select></label>
+<label>Project description<textarea name="msg" rows="5" required></textarea></label>
+<button class="btn p" type="submit">Start a Conversation</button>
+<p class="mute" style="font-size:13px">Submitting opens your email app with the message ready to send.</p>
+</form>
+</div></section></div>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> DEVLOK — Realms of Creators</span><span>Concept projects · DEVLOK EU Showcase</span></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
